@@ -8,9 +8,9 @@
     "lint": "eslint .",
     "test": "jest",
     "coverage": "jest --coverage",
-    "preshow:coverage": "npm run coverage",
+    "preshow:coverage": "yarn run coverage",
     "show:coverage": "live-server coverage/lcov-report",
-    "preshow:dist": "npm run build",
+    "preshow:dist": "yarn run build",
     "show:dist": "live-server dist"
   },
   "author": "Nadezhda",
@@ -41,6 +41,9 @@
     "core-js": "^3.15.2",
     "yarn": "^1.22.17"
   },
+  "jest":{
+    "testEnvironment": "jsdom"
+},
   "repository": "git+https://github.com/kassiopea-coder/ajs-promises.git",
   "bugs": {
     "url": "https://github.com/kassiopea-coder/ajs-promises/issues"

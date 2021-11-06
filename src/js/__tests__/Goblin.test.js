@@ -18,7 +18,7 @@ test('init', () => {
   const goblin = new Goblin(html.querySelector('.goblin'));
   expect(goblin.cells[0].contains(goblin.goblinHead)).toBeTruthy();
   goblin.init();
-  jest.runTimersToTime(1500);
+  jest.advanceTimersByTime(1500);
   expect(goblin.cells[0].contains(goblin.goblinHead)).toBeFalsy();
 });
 
@@ -38,7 +38,7 @@ test('rotate', () => {
   const goblin = new Goblin(html.querySelector('.goblin'));
   expect(goblin.cells[0].contains(goblin.goblinHead)).toBeTruthy();
   goblin.rotate();
-  jest.runTimersToTime(1500);
+  jest.advanceTimersByTime(1500);
   expect(goblin.cells[0].contains(goblin.goblinHead)).toBeFalsy();
 });
 
@@ -57,8 +57,8 @@ test('lose', () => {
   </div>`;
   const goblin = new Goblin(html.querySelector('.goblin'));
   goblin.init();
-  jest.runTimersToTime(6000);
+  jest.advanceTimersByTime(6000);
   expect(goblin.game.miss).toBe(5);
-  jest.runTimersToTime(2000);
+  jest.advanceTimersByTime(2000);
   expect(goblin.game.miss).toBe(5);
 });
