@@ -1,2 +1,2 @@
-# ajs-oop2
-[![Build status](https://ci.appveyor.com/api/projects/status/s858tu3j0c4d015k?svg=true)](https://ci.appveyor.com/project/kassiopea-coder/ajs-oop2)
+# ahj-event1
+[![Build status](https://ci.appveyor.com/api/projects/status/ddcn2v3pggnqj7t0?svg=true)](https://ci.appveyor.com/project/kassiopea-coder/ahj-event-1-ooyhp)
