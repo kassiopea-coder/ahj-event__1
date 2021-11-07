@@ -1,4 +1,10 @@
-import Goblin from './Goblin';
+import GamePlay from './GamePlay';
 
-const goblin = new Goblin(document.querySelector('.goblin'));
-goblin.init();
+const game = new GamePlay(4);
+game.drawGameBoard();
+
+const start = document.querySelector('.game__btn');
+start.addEventListener('click', () => {
+  game.stop();
+  game.start();
+});
